@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import tensorflow
-from tensorflow.keras.models import load_model
 import joblib
-
 from forecasting import forecast_future
 
 
