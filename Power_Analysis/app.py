@@ -21,10 +21,7 @@ def load_data():
  import os
 import streamlit as st
 
-st.write("Power_Analysis", os.getcwd())
-st.write("PJMW_MW_Hourly.xlsx", os.listdir())
-st.write("data", os.listdir("data"))
-df = pd.read_excel("data/PJMW_MW_Hourly.xlsx")
+df = pd.read_excel("PJMW_MW_Hourly.xlsx")
 df = load_data()
 
 
