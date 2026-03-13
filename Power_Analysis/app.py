@@ -28,7 +28,7 @@ df = load_data()
 
 
 # Load trained model and scaler
-model = load_model("model/lstm_model.h5")
+model = ("model/lstm_model.h5")
 scaler = joblib.load("model/scaler.pkl")
 
 
