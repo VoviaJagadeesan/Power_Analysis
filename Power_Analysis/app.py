@@ -18,14 +18,13 @@ import streamlit as st
 @st.cache_data
 def load_data():
 
-    base_dir = os.path.dirname("Power_Analysis")
-    file_path = os.path.join(base_dir, "data", "PJMW_MW_Hourly.xlsx")
+ import os
+import streamlit as st
 
-    df = pd.read_excel(file_path, parse_dates=["Datetime"])
-    df.set_index("Datetime", inplace=True)
-
-    return df
-
+st.write("Power_Analysis", os.getcwd())
+st.write("PJMW_MW_Hourly.xlsx", os.listdir())
+st.write("data", os.listdir("data"))
+df = pd.read_excel("data/PJMW_MW_Hourly.xlsx")
 df = load_data()
 
 
