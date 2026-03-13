@@ -23,13 +23,13 @@ def load_data():
  import os
 import streamlit as st
 
-df = pd.read_excel("Power_Analysis/PJMW_MW_Hourly.xlsx")
+df = pd.read_excel("PJMW_MW_Hourly.xlsx")
 df = load_data()
 
 
 # Load trained model and scaler
-model = ("model/lstm_model.h5")
-scaler = joblib.load("model/scaler.pkl")
+model = ("lstm_model.h5")
+scaler = joblib.load("scaler.pkl")
 
 
 st.sidebar.title("Navigation")
