@@ -23,7 +23,7 @@ def load_data():
  import os
 import streamlit as st
 
-df = pd.read_excel("PJMW_MW_Hourly.xlsx")
+df = pd.read_excel("Power_Analysis/PJMW_MW_Hourly.xlsx")
 df = load_data()
 
 
