@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import joblib
+import matplotlib.pyplot as plt
+import seaborn as sns
 from forecasting import forecast_future
 
 
