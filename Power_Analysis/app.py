@@ -12,14 +12,6 @@ st.set_page_config(
 
 st.title("PJM Hourly Energy Consumption Forecast")
 
-
-@st.cache_data
-def load_data():
-
-    df = pd.read_excel("data/PJMW_MW_Hourly.xlsx", parse_dates=["Datetime"])
-    df.set_index("Datetime", inplace=True)
-    return df
-
 import os
 import streamlit as st
 
