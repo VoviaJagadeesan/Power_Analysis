@@ -195,9 +195,6 @@ elif page == "30 Day Forecast":
 
     st.subheader("Forecast Insights")
 
-    peak = int(forecasting.py["Forecast"].max())
-    minimum = int(forecasting.py["Forecast"].min())
-    avg = int(forecasting.py["Forecast"].mean())
 
     col1, col2, col3 = st.columns(3)
 
