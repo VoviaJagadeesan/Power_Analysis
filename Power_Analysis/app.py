@@ -190,8 +190,6 @@ elif page == "30 Day Forecast":
 
     st.subheader("Forecast Preview")
 
-    st.dataframe(forecasting.py.head(48))
-
 
     # INSIGHTS
 
