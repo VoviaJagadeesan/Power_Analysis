@@ -186,8 +186,8 @@ elif page == "30 Day Forecast":
     )
 
     forecast_df = forecast_future(
-        model,
-        scaler,
+        lstm_energy_model,
+        energy_scaler,
         df,
         seq_length=24,
         days=days
