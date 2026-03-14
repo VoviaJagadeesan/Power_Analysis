@@ -188,8 +188,6 @@ elif page == "30 Day Forecast":
 
     st.subheader("Forecasted Energy Demand")
 
-    st.line_chart(forecast_df)
-
     st.subheader("Forecast Preview")
 
     st.dataframe(forecast_df.head(48))
