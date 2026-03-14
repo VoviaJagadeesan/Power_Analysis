@@ -185,13 +185,6 @@ elif page == "30 Day Forecast":
         value=30
     )
 
-    forecast_df = forecast_future(
-        lstm_energy_model,
-        energy_scaler,
-        df,
-        seq_length=24,
-        days=days
-    )
 
     st.subheader("Forecasted Energy Demand")
 
