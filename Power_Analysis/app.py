@@ -200,7 +200,7 @@ elif page == "30 Day Forecast":
 
     peak = df['PJMW_MW'].max()
     minimum = df['PJMW_MW'].min()
-    avg = df['PJMW_MW'].avg()
+    avg = df['PJMW_MW'].average()
     col1.metric("Predicted Peak Demand", f"{peak} MW")
     col2.metric("Predicted Minimum Demand", f"{minimum} MW")
     col3.metric("Average Demand", f"{avg} MW")
