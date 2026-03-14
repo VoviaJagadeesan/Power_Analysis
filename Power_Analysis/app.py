@@ -36,8 +36,8 @@ def load_data():
 df = load_data()
 
 # Load trained model and scaler
-model = ("model/lstm_energy_model.h5")
-scaler = joblib.load("model/energy_scaler.pkl")
+model = ("Power_Analysis/model/lstm_energy_model.h5")
+scaler = joblib.load("Power_Analysis/model/energy_scaler.pkl")
 
 
 st.sidebar.title("Navigation")
