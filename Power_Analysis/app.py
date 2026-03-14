@@ -190,7 +190,7 @@ elif page == "30 Day Forecast":
     st.line_chart(df['PJMW_MW'])
 
     st.subheader("Forecast Preview")
-    st.dataframe(df.head(48))
+    st.dataframe(df.head)
 
     # INSIGHTS
 
