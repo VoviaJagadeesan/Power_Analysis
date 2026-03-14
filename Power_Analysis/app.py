@@ -198,7 +198,7 @@ elif page == "30 Day Forecast":
 
     col1, col2, col3 = st.columns(3)
 
-    peak = df['Load_MW'].max()
+    peak = df['PJMW_MW'].max()
     col1.metric("Predicted Peak Demand", f"{peak} MW")
     col2.metric("Predicted Minimum Demand", f"{minimum} MW")
     col3.metric("Average Demand", f"{avg} MW")
