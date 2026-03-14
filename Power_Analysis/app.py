@@ -190,16 +190,16 @@ elif page == "30 Day Forecast":
 
     st.subheader("Forecast Preview")
 
-    st.dataframe(forecast_df.head(48))
+    st.dataframe(forecast.py.head(48))
 
 
     # INSIGHTS
 
     st.subheader("Forecast Insights")
 
-    peak = int(forecast_df["Forecast"].max())
-    minimum = int(forecast_df["Forecast"].min())
-    avg = int(forecast_df["Forecast"].mean())
+    peak = int(forecast.py["Forecast"].max())
+    minimum = int(forecast.py["Forecast"].min())
+    avg = int(forecast.py["Forecast"].mean())
 
     col1, col2, col3 = st.columns(3)
 
