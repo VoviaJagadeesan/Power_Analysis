@@ -28,7 +28,7 @@ import pandas as pd
 
 @st.cache_data
 def load_data():
-    df = pd.read_excel("data/PJMW_MW_Hourly.xlsx")
+    df = pd.read_excel("Power_Analysis/data/PJMW_MW_Hourly.xlsx")
     df['Datetime'] = pd.to_datetime(df['Datetime'])
     df.set_index('Datetime', inplace=True)
     return df
