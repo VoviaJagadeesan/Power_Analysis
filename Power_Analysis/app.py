@@ -187,9 +187,10 @@ elif page == "30 Day Forecast":
 
 
     st.subheader("Forecasted Energy Demand")
+    st.line_chart(df['PJMW_MW'])
 
     st.subheader("Forecast Preview")
-
+    st.dataframe(df.head(48)
 
     # INSIGHTS
 
